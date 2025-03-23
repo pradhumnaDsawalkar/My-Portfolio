@@ -59,48 +59,33 @@ export const NavBtn = styled.div`
 function Dropdown({ isOpen, toggle }) {
   return (
     <SiderBar isOpen={isOpen} onClick={toggle}>
-      <CloseIcon onClick={toggle} />
-      <NavMenu>
-        <NavLink
-          onClick={toggle}
-          className="menu-item"
-          to="projects"
-        >
-          Projects
-        </NavLink>
-        <NavLink
-          onClick={toggle}
-          className="menu-item"
-          to="about"
-        >
-          About
-        </NavLink>
-        <NavLink
-          onClick={toggle}
-          className="menu-item"
-          to="contact"
-        >
-          Contact
-        </NavLink>
-        <NavLink
-          onClick={toggle}
-          className="menu-item"
-          to="experience"
-        >
-          Experience
-        </NavLink>
-      </NavMenu>
-      <NavBtn onClick={toggle}>
-        <a
-          className="btn PrimaryBtn"
-          href="https://drive.google.com/file/d/1LkuLexbsGdQw4PkqEqyyGf1rq74V3Emc/view?usp=sharing"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Resume
-        </a>
-      </NavBtn>
-    </SiderBar>
+    <CloseIcon onClick={toggle} />
+    <NavMenu>
+      <NavLink onClick={toggle} className="menu-item" to="/projects">
+        Projects
+      </NavLink>
+      <NavLink onClick={toggle} className="menu-item" to="/about">
+        About
+      </NavLink>
+      <NavLink onClick={toggle} className="menu-item" to="/contact">
+        Contact
+      </NavLink>
+      <NavLink onClick={toggle} className="menu-item" to="/experience">
+        Experience
+      </NavLink>
+      
+    </NavMenu>
+    <NavBtn onClick={toggle}>
+      <a
+        className="btn PrimaryBtn"
+        href="https://drive.google.com/file/d/1LkuLexbsGdQw4PkqEqyyGf1rq74V3Emc/view?usp=sharing"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Resume
+      </a>
+    </NavBtn>
+  </SiderBar>
   );
 }
 

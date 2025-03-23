@@ -14,6 +14,8 @@ body {
   background: #fafaff;
   font-weight: 400;
   overflow-x: hidden;
+  padding: 0;
+  margin: 0;
 }
 
 main {

@@ -19,7 +19,7 @@ export const ProjectList = [
     demo_url: "",
   },
   {
-    img: "/renr-responsive.png",
+    img: "/rock-paper-scissors-icon-set-on-white-background-vector.jpg",
     title: "Stone-Paper-Scissor",
     description:
       "A game of rock-paper-scissor having a competition with computer played digitally",
@@ -79,10 +79,6 @@ export const stackList = [
   {
     img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/figma/figma-original.svg",
     name: "Figma",
-  },
-  {
-    img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-plain.svg",
-    name: "TailwindCSS",
   },
   {
     img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg",

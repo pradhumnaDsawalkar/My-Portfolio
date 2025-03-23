@@ -17,8 +17,13 @@ function Home() {
         <Experience />
       </section>
       <About />
-      <SkillSet />
+      <section id="skillset">
+        <SkillSet />
+      </section>
+      <section id="contact">
       <Contact />
+      </section>
+      
       <FixSocialIcon />
       <Footer />
       <ScrollToTop />

@@ -29,7 +29,7 @@ export const CardLeft = styled.div`
   justify-self: center;
   height: 100%;
   img {
-    object-fit: cover;
+    object-fit:cover;
     border-radius: 10px;
   }
 `;
@@ -38,6 +38,7 @@ export const CardRight = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap:2px;
   align-items: center;
 
   h4 {
@@ -51,7 +52,7 @@ export const CardRight = styled.div`
     max-width: 95%;
     margin-top: 10px;
     margin-bottom: 1rem;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(17, 17, 17, 0.8);
     text-align: center;
     line-height: 1.6;
 
@@ -76,6 +77,7 @@ export const TechCardContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  
   @media (min-width: 992px) {
     justify-content: flex-start;
   }

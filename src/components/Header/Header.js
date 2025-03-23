@@ -1,15 +1,13 @@
+
 import React from "react";
 import { Nav, Logo, NavLink, Bars, NavMenu, NavBtn } from "./HeaderElements";
 
 const Header = ({ toggle }) => {
   return (
-    <div className="Container" style={{padding: 0}}>
+    <div className="Container" style={{ padding: 0 }}>
       <Nav>
         <Logo to="/">
-          <img
-            src="/logo.png"
-            alt="logo"
-          />
+          <img src="/logo.png" alt="logo" />
         </Logo>
         <NavMenu>
           <NavLink className="menu-item" to="projects">
@@ -21,9 +19,18 @@ const Header = ({ toggle }) => {
           <NavLink className="menu-item" to="contact">
             Contact
           </NavLink>
-          <NavLink to="experience" smooth={true} duration={500} offset={-70}  style={{ marginLeft: "20px" }}>
-  Experience
-</NavLink>
+          <NavLink className="menu-item" to="skillset">
+            Skills
+          </NavLink>
+          <NavLink
+            to="experience"
+            smooth={true}
+            duration={500}
+            offset={-70}
+            style={{ marginLeft: "20px" }}
+          >
+            Experience
+          </NavLink>
         </NavMenu>
         <NavBtn>
           <a
@@ -40,5 +47,4 @@ const Header = ({ toggle }) => {
     </div>
   );
 };
-
 export default Header;
