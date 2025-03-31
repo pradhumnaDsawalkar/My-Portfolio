@@ -1,10 +1,6 @@
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 
-const floatingAnimation = keyframes`
-  0% { transform: translateX(0); }
-  50% { transform: translateX(600px); }
-  100% { transform: translateX(0); }
-`;
+
 export const Card = styled.div`
   display: flex;
   flex-direction: column;
