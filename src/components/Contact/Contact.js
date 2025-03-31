@@ -4,6 +4,7 @@
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
 import './Contact.css';
+import VoiceControl from "../VoiceControl/VoiceControl"; // Import the VoiceControl component
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -42,22 +43,12 @@ const ContactForm = () => {
 
   return (
     <div>
-     <div className="SectionTitle" style={{ textAlign: "center", fontSize: "2rem", marginTop:"20px",marginBottom: "20px" }}>
+    <VoiceControl />
+     <div className="SectionTitle" style={{ textAlign: "center", fontSize: "2rem", marginTop:"20px",marginBottom: "50px" }}>
         Contact Me
       </div>
     <div className="contact-container">
-    
-  {/* 🚀 Animated Background */}
-  <div className="contact-form-background"></div>
-  <div className="particles">
-    {[...Array(30)].map((_, i) => (
-      <span key={i} style={{
-        left: `${Math.random() * 100}%`,
-        top: `${Math.random() * 100}%`,
-        animationDuration: `${Math.random() * 10 + 5}s`,
-      }}></span>
-    ))}
-  </div>
+  
 
   {/* 🌟 Contact Form */}
   <form onSubmit={handleSubmit} className="contact-form">

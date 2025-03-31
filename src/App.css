@@ -1,4 +1,61 @@
-.div{
-    padding: 1;
-    margin: 1;
+/* Smooth scrolling effect */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Background animation */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-size: 400% 400%;
+  background: linear-gradient(135deg, #dbeafe, #fae8ff, #fef9c3, #d1fae5);
+  animation: gradientAnimation 10s infinite alternate;
+  color: #333; /* Dark text for contrast */
+}
+
+/* Keyframe animation for smooth background movement */
+@keyframes gradientAnimation {
+  0% { background-position: 0% 0%; }
+  100% { background-position: 100% 100%; }
+}
+
+/* General spacing for div elements */
+.div {
+  padding: 10px;
+  margin: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  body {
+      background-size: 300% 300%; /* Adjust background scaling */
+  }
+
+  .div {
+      padding: 8px;
+      margin: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+      background-size: 200% 200%;
+  }
+
+  .div {
+      padding: 6px;
+      margin: 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+      background-size: 150% 150%;
+  }
+
+  .div {
+      padding: 4px;
+      margin: 4px;
+  }
 }

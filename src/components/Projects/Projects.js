@@ -1,5 +1,7 @@
 import React from "react";
 import ProjectCard from "./ProjectCard/ProjectCard";
+import VoiceControl from "../VoiceControl/VoiceControl"; // Import the VoiceControl component
+
 function Projects() {
   return (
     <>
@@ -19,6 +21,7 @@ function Projects() {
         ></path>
       </svg>
       <div className="ProjectWrapper" id="projects">
+      <VoiceControl/>
         <div className="Container">
           <div className="SectionTitle" style={{ textAlign: "center", fontSize: "2rem", marginBottom: "50px" }}>Projects</div>
           <ProjectCard />

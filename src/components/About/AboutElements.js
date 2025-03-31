@@ -2,30 +2,47 @@ import styled from "@emotion/styled";
 
 export const ContactWrapper = styled.div`
   margin-top: 5rem;
+  padding: 0 1rem;
+
+  @media screen and (max-width: 576px) {
+    margin-top: 3rem;
+  }
 `;
 
 export const Image = styled.img`
   max-width: 120px;
   margin: 0 auto;
   margin-bottom: 1rem;
+
+  @media screen and (max-width: 576px) {
+    max-width: 100px;
+  }
 `;
 
 export const Technologies = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); /* Dynamic grid */
   gap: 20px;
   max-width: 90%;
-  width: 70%;
+  width: 100%;
   margin: 0 auto;
   padding: 20px;
+  justify-items: center; /* Centers items in the grid */
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+    gap: 15px;
+  }
+
+  @media screen and (max-width: 480px) {
+    gap: 10px;
+  }
 `;
 
 export const Tech = styled.div`
   background: #1e1e1e;
   padding: 15px;
-  border-radius: 10px;
+  border-radius: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -44,6 +61,11 @@ export const Tech = styled.div`
     width: 80px;
     height: 80px;
   }
+
+  @media screen and (max-width: 480px) {
+    width: 70px;
+    height: 70px;
+  }
 `;
 
 export const TechImg = styled.img`
@@ -56,6 +78,11 @@ export const TechImg = styled.img`
     width: 40px;
     height: 40px;
   }
+
+  @media screen and (max-width: 480px) {
+    width: 35px;
+    height: 35px;
+  }
 `;
 
 export const TechName = styled.div`
@@ -64,4 +91,8 @@ export const TechName = styled.div`
   text-align: center;
   color: #ffffff;
   margin-top: 5px;
+
+  @media screen and (max-width: 480px) {
+    font-size: 12px;
+  }
 `;

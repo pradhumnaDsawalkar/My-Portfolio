@@ -8,11 +8,17 @@ import Contact from "../components/Contact/Contact";
 import Footer from "../components/Footer/Footer";
 import FixSocialIcon from "../components/SocialIcon/FixSocialIcon";
 import ScrollToTop from "../components/SocialIcon/ScrollToTop";
+import VoiceControl from "../components/VoiceControl/VoiceControl"; // Import the VoiceControl component
+import "../App.css";
+
 function Home() {
   return (
     <>
+      <VoiceControl /> {/* Add the VoiceControl component here */}
       <Hero />
-      <Projects />
+      <section id="projects">
+        <Projects />
+      </section>
       <section id="experience">
         <Experience />
       </section>
@@ -21,9 +27,8 @@ function Home() {
         <SkillSet />
       </section>
       <section id="contact">
-      <Contact />
+        <Contact />
       </section>
-      
       <FixSocialIcon />
       <Footer />
       <ScrollToTop />

@@ -4,8 +4,12 @@ import {
   ContactWrapper,
 } from "./AboutElements";
 import ScrollAnimation from "react-animate-on-scroll";
+import VoiceControl from "../VoiceControl/VoiceControl";
+
 function About() {
   return (
+    <div>
+    <VoiceControl/>
     <ContactWrapper id="about">
       <div className="Container">
         <div className="SectionTitle"style={{ textAlign: "center", fontSize: "2rem", marginBottom: "20px",marginTop:"50px" }}>About Me</div>
@@ -42,6 +46,7 @@ function About() {
         </div>
       </div>
     </ContactWrapper>
+    </div>
   );
 }
 

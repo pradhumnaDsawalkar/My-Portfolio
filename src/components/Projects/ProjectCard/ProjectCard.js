@@ -1,6 +1,7 @@
 import React from "react";
 import { ProjectList } from "../../../data/ProjectData";
 import {
+  CardContainer,
   Card,
   CardLeft,
   CardRight,
@@ -9,11 +10,15 @@ import {
   BtnGroup,
 } from "./ProjectCardElements";
 import ScrollAnimation from "react-animate-on-scroll";
+
 function ProjectCard() {
   return (
-    <>
+    <CardContainer>
       {ProjectList.map((list, index) => (
-        <ScrollAnimation animateIn="fadeInLeft" key={index}>
+        <ScrollAnimation
+          animateIn={index % 2 === 0 ? "fadeInLeft" : "fadeInRight"}
+          key={index}
+        >
           <Card>
             <CardLeft>
               <img src={list.img} alt={list.name} />
@@ -52,7 +57,7 @@ function ProjectCard() {
           </Card>
         </ScrollAnimation>
       ))}
-    </>
+    </CardContainer>
   );
 }
 
