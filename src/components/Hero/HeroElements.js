@@ -7,11 +7,6 @@ const fadeIn = keyframes`
   to { opacity: 1; transform: translateY(0); }
 `;
 
-/* Elegant Floating Effect */
-const float = keyframes`
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-5px); }
-`;
 
 /* Subtle Scroll Indicator Animation */
 const shimmer = keyframes`
